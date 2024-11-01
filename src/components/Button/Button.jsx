@@ -1,9 +1,9 @@
 
 
-export const Button = ({children}) => {
+export const Button = ({children, btnColor}) => {
   return (
     <>
-      <button className="bg-[--primary] text-white p-1 rounded">
+      <button className={`bg-${btnColor} text-white p-1 rounded`}>
         {children}
       </button>
     </>
